@@ -1,0 +1,61 @@
+/*setting up the sizing, border and background colour of the div container*/
+#animHolder{
+    position:relative;
+    width: 400px;
+    height: 400px;
+    overflow:hidden;
+    background-color: yellowgreen;
+    border:  4px solid black;
+}
+/*making the child divs match the main container*/
+#animHolder>div{
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+/*matching the image dimensions to the container*/
+#imgDiv img{
+    width: 100%;
+    height: 100%;
+}
+/* styling for all photoInfo elements*/
+.photoInfo{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ccc;
+    color: #003300;
+    border: 1px solid yellow;
+}
+
+/* specific styling for the h3*/
+#infoDiv h3{
+    position:relative;
+    padding: 10px;
+    font-size: 2em;
+    text-align: right;
+    left:-120%;
+    transition: left .25s ease-in, box-shadow 1s ease-out;
+}
+#infoDiv:hover h3{
+    left: -25%;
+    box-shadow:  8px 8px 3px #333;
+}
+/* specific styling for our p tag*/
+#infoDiv p{
+    position: relative;
+    font-size: 1.1em;
+    text-align: left;
+    top: 35%;
+    left: 125%;
+    padding: 5px 95px 5px 5px;
+    transition: left .25s .75s ease-out, box-shadow 1s .25s ease-out;
+}
+
+#infoDiv:hover p{
+    left: 21%;
+    box-shadow: 8px 8px 3px #333;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
